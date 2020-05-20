@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/babyBlue"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:gravity="center_vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/darkBlue"/>
+
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
+        android:lines="1"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:text="Note title" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+    <TextView
+        android:id="@+id/timeStamp_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:padding="10dp"
+        android:textSize="16sp"
+        tools:text="Dec 2020" />
+</LinearLayout>
